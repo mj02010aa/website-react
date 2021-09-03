@@ -1,0 +1,167 @@
+:root {
+  --color-bg: #111827;
+  --color-text-main: #D1D5DB;
+  --color-text-second: #E5E7EB;
+  --color-text-ultra-gray: #9CA3AF;
+  --color-text-hello: #1D4ED8;
+  --wrapper-height: 85vh;
+  --image-max-width: 320px;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+img {
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none
+}
+
+@media only screen and (min-width: 640px) {
+	.padding {
+		padding-left: 17%;
+		padding-right: 17%
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.padding {
+		padding-left: 3%;
+		padding-right: 3%
+	}
+}
+
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+.footer {
+  color: var(--color-text-ultra-gray);
+  display: flex;
+  border-top: 3px solid var(--color-text-hello);
+}
+
+.footer-text {
+  margin-top: 14px;
+}
+
+.btn--remix {
+  font-family: HK Grotesk;
+  font-size: 1.1rem;
+  font-weight: 500;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-text-main);
+  margin-left: auto;
+  margin-top: 14px;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  color: #D0FFF1;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+  min-height: 86vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-up-wel {
+  color: var(--color-text-second)
+}
+
+.hello-react {
+  color: var(--color-text-hello);
+}
+
+.about-icon-mr {
+  margin-right: 1%;
+}
+
+.footer-icon-mr {
+  margin-right: 5px;
+}
+
+.about-icon-s-size {
+  font-size: 28px;
+  margin-right: 5px
+}
+
+.about-icon-a {
+  color: var(--color-text-main);
+}
+
+.about-icon-a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  color: #2800FF;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+}
+h1 {
+  font-size: 48px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.about {
+  color: var(--color-text-main);
+}
+
+.a {
+  color: var(--color-text-main)
+}
+
+.a:hover {
+  text-decoration: none;
+}
+
+.btn--click-me {
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn--click-me:hover {
+  text-decoration: none;
+}
