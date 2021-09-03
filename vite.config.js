@@ -3,17 +3,13 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 
 export default defineConfig({
   plugins: [reactRefresh()],
-  dist: public,
   build: {
-    outDir: "build",
-    dist: public
+    outDir: "build"
   },
   server: {
     strictPort: true,
-    dist: public,
     hmr: {
-      port: 443,
-      dist: public
+      port: 443
     }
   }
 });
