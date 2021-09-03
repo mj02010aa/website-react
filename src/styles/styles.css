@@ -10,6 +10,10 @@
   --font-family-header: "HK Grotesk";
 }
 
+.tippy-popper .tippy-tooltip.ws-theme * {
+  background-color: #2d314a !important;    
+}
+
 img {
   -webkit-user-select: none; 
   -ms-user-select: none; 
@@ -34,6 +38,7 @@ img {
 * {
   box-sizing: border-box;
 }
+
 [hidden] {
   display: none !important;
 }
@@ -53,7 +58,7 @@ img {
 .footer {
   color: var(--color-text-ultra-gray);
   display: flex;
-  border-top: 3px solid var(--color-text-hello);
+  border-top: 2px solid var(--color-text-hello);
 }
 
 .footer-text {
@@ -70,12 +75,20 @@ img {
   color: var(--color-text-main);
   margin-left: auto;
   margin-top: 14px;
+  transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;  
 }
 .btn--remix img {
   margin-right: 0.5rem;
 }
 .btn--remix:hover {
-  color: #D0FFF1;
+  color: #BFDBFE;
+  transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;  
 }
 
 .divider {
@@ -123,10 +136,19 @@ body {
 
 .about-icon-a {
   color: var(--color-text-main);
+  transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;  
 }
 
 .about-icon-a:hover {
   text-decoration: none;
+  color: #BFDBFE;
+  transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;  
 }
 
 h1 {
@@ -150,11 +172,20 @@ p {
 }
 
 .a {
-  color: var(--color-text-main)
+  color: var(--color-text-main);
+  transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;  
 }
 
 .a:hover {
+  color: #BFDBFE;
   text-decoration: none;
+  transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;  
 }
 
 .btn--click-me {

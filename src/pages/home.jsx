@@ -3,6 +3,9 @@ import { animated } from "react-spring";
 import { useWiggle } from "../hooks/wiggle";
 import { Link } from "wouter";
 
+import { Tooltip } from 'react-tippy';
+import 'react-tippy/dist/tippy.css'
+
 const strings = [
   "Hello",
   "Salut",
@@ -74,12 +77,12 @@ export default function Home() {
         <i className="far fa-globe-asia about-icon-mr"></i> Turkey
       </p>
       <p className="about">
-        <span className="about-icon-s-size"><a className="about-icon-a" href="https://discord.com/invite/HWjPAAs9d3" target="_blank"><i className="far fa-user-headset about-icon-mr"></i></a></span>
-        <span className="about-icon-s-size"><a className="about-icon-a" href="https://discord.com/users/354343248698802187" target="_blank"><i className="fab fa-discord about-icon-mr"></i></a></span>
-        <span className="about-icon-s-size"><a className="about-icon-a" href="https://github.com/elevenvac" target="_blank"><i className="fab fa-github about-icon-mr"></i></a></span>
-        <span className="about-icon-s-size"><a className="about-icon-a" href="https://twitter.com/elevenvac" target="_blank"><i className="fab fa-twitter about-icon-mr"></i></a></span>
-        <span className="about-icon-s-size"><a className="about-icon-a" href="https://www.youtube.com/c/Elevenvac" target="_blank"><i className="fab fa-youtube about-icon-mr"></i></a></span>
-        <span className="about-icon-s-size"><a className="about-icon-a" href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank"><i className="fab fa-spotify about-icon-mr"></i></a></span>
+        <Tooltip theme="ws" title="Eleven's Base" position="bottom"><span className="about-icon-s-size"><a className="about-icon-a" href="https://discord.com/invite/HWjPAAs9d3" target="_blank"><i className="far fa-user-headset about-icon-mr"></i></a></span></Tooltip>
+        <Tooltip theme="ws" title="Eleven" position="bottom"><span className="about-icon-s-size"><a className="about-icon-a" href="https://discord.com/users/354343248698802187" target="_blank"><i className="fab fa-discord about-icon-mr"></i></a></span></Tooltip>
+        <Tooltip theme="ws" title="elevenvac" position="bottom"><span className="about-icon-s-size"><a className="about-icon-a" href="https://github.com/elevenvac" target="_blank"><i className="fab fa-github about-icon-mr"></i></a></span></Tooltip>
+        <Tooltip theme="ws" title="@elevenvac" position="bottom"><span className="about-icon-s-size"><a className="about-icon-a" href="https://twitter.com/elevenvac" target="_blank"><i className="fab fa-twitter about-icon-mr"></i></a></span></Tooltip>
+        <Tooltip theme="ws" title="Eleven" position="bottom"><span className="about-icon-s-size"><a className="about-icon-a" href="https://www.youtube.com/c/Elevenvac" target="_blank"><i className="fab fa-youtube about-icon-mr"></i></a></span></Tooltip>
+        <Tooltip theme="ws" title="Eleven" position="bottom"><span className="about-icon-s-size"><a className="about-icon-a" href="https://open.spotify.com/user/yo55g26ffwx83q0smizx52yuf" target="_blank"><i className="fab fa-spotify about-icon-mr"></i></a></span></Tooltip>
       </p>
       <p className="footer">
         <span className="footer-text">Made with React</span>
