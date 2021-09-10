@@ -8,6 +8,8 @@ import useHashLocation from "./hooks/wouter-hash";
 
 import Seo from './components/seo.jsx';
 
+import { Tooltip } from 'react-tippy';
+
 export default function Home() {
   return (
     <Router hook={useHashLocation}>
