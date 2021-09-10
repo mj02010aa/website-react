@@ -3,7 +3,8 @@ import { animated } from "react-spring";
 import { useWiggle } from "../hooks/wiggle";
 import { Link } from "wouter";
 
-import { Tooltip } from '@tippyjs/react';
+import { Tooltip } from 'react-tippy';
+import 'react-tippy/dist/tippy.css'
 
 const strings = [
   "Hello",
